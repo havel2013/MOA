@@ -11,6 +11,18 @@
 <body>
     <div class="bramborak">
         <h1>Kalkulajda</h1>
+        <form id="calcForm">
+            <input type="number" id="operand1" placeholder="Prvni číslo" required>
+            <select id="operation">
+                <option value="add">sčítání (+)</option>
+                <option value="subtract">Odčítání (-)</option>
+                <option value="multiply">Násobení (*)</option>
+                <option value="divide">Dělení (/)</option>
+            </select>
+            <input type="number" id="operand2" placeholder="Druhé číslo" required>
+            <button type="button" onclick="calculate()">Spočítat</button>
+        </form>
+        <div id="result">Výsledek</div>
     </div>
 </body>
 </html>
